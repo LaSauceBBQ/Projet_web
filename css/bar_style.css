@@ -1,7 +1,8 @@
 body {
     background-color:rgb(92, 169, 220);
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;   
+    font-family: 'Times New Roman', Times, serif;  
+    color:aliceblue;
 }
 
 header {
@@ -38,11 +39,17 @@ footer#Accueil{
     background: url(../picturebar/pexels-emre-can-acer-2079438.jpg) no-repeat fixed ;
     background-size: cover;
 }
+section#Choix{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 section#Choix div{
     height: 200px;
+    flex:0 1 px 33%;
 }
-
+/*
 div#Aide{
     background: url(../picturebar/pexels-mali-maeder-219095.jpg) no-repeat  ;
     background-size: cover;
@@ -56,4 +63,15 @@ div#A_propos{
 div#Tableau{
     background: url(../picturebar/bar.png) no-repeat  ;
     background-size: cover;
+}
+*/
+.zoom img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom :hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }

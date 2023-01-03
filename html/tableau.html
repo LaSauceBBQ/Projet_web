@@ -8,16 +8,54 @@
         <!-- lier la page html avec le css -->
         <link rel= "stylesheet" href= "..\css\bar_style.css">
 
-      
+        <!--lier la page avec le java script-->
+        <script type = "text/javascript" src = "../javascript/bar_script.js"></script>
         
     </head>
     <!-- body -->
-    <body id = Tableau>
+    <body id = Tableau , onload ="bienvenu()">
         <header>
             <img src="https://www.efrei.fr/wp-content/uploads/2022/01/LOGO_EFREI-PRINT_EFREI-WEB.png" alt="Logo Efrei"  width="20%" height="36%"  />
             <h1>Efrei Bar</h1>
         </header>
+        <section>
+            <form method = "post" name="newTask" class="box" id="newTask" onsubmit="return false">
+                <strong>Nom de la tâche</strong>
+                <input type="text" id="tache" name="tache" size="25" placeholder = "Nouvelle tâche" required>
+                <strong>Date:</strong></label>
+                <input type="date" id="date" name="date" value="2022-09-01"
+                 min="2022-09-01" max="2023-09-01">
+                <strong>Catégorie : </strong>
+                <select name="categorie" size=1>
+                    <option>Tâche personnelle</option>
+                    <option>Tâche professionnelle</option>
+                    <option> Tâche partagée</option>
+                </select>
 
+                <button type="submit" class="btn" onclick="ajouter()">Ajouter</button>
+                <button type="button" class="btn"  onclick="supprimer()">Supprimer</button>
+
+
+            </form>
+        </section>
+        <main>
+            <div class="box">
+                    
+                <table class="datatable">
+                    <thead>
+                        <tr>
+                        <th>Ingrédient</th>
+                        <th>Recette </th>
+                        <th>Difficulté</th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                </div>
+        
+        </main>         
 
 
        <footer id="Accueil">
