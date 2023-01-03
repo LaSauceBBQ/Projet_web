@@ -1,0 +1,59 @@
+body {
+    background-color:rgb(92, 169, 220);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;   
+}
+
+header {
+    display: flex ;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height:200px;
+}
+
+
+body#Accueil{
+    background: url(../picturebar/pexels-emre-can-acer-2079438.jpg) no-repeat fixed ;
+    background-size: cover;
+}
+
+body#A_propos{
+    background: url(../picturebar/pexels-mike-yakaites-2585614.jpg) no-repeat fixed ;
+    background-size: cover;
+}
+
+body#Tableau{
+    background: url(../picturebar/bar.png) no-repeat fixed ;
+    background-size: cover;
+}
+
+body#Aide{
+    background: url(../picturebar/pexels-mali-maeder-219095.jpg) no-repeat fixed ;
+    background-size: cover;
+}
+
+footer#Accueil{
+    display:flex;
+    background: url(../picturebar/pexels-emre-can-acer-2079438.jpg) no-repeat fixed ;
+    background-size: cover;
+}
+
+section#Choix div{
+    height: 200px;
+}
+
+div#Aide{
+    background: url(../picturebar/pexels-mali-maeder-219095.jpg) no-repeat  ;
+    background-size: cover;
+}
+
+div#A_propos{
+    background: url(../picturebar/pexels-mike-yakaites-2585614.jpg) no-repeat  ;
+    background-size: cover;
+}
+
+div#Tableau{
+    background: url(../picturebar/bar.png) no-repeat  ;
+    background-size: cover;
+}
