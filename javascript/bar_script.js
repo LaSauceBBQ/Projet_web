@@ -5,7 +5,14 @@ function bienvenu() {
 function ajouter(){
 
     var newTaskForm = document.forms.newTask;
+
+
     console.log(newTaskForm.elements.NomCocktail.value);
+    console.log(newTaskForm.elements.Ingrédiens.value);
+    console.log(newTaskForm.elements.Méthode.value);
+    console.log(newTaskForm.elements.Difficulté.value);
+    console.log(newTaskForm.elements.Pseudo.value);
+    
     
 
     const newItem = document.createElement('tr');
@@ -22,7 +29,6 @@ function ajouter(){
     td4.textContent = newTaskForm.elements.Difficulté.value
     td5.textContent = newTaskForm.elements.Pseudo.value
     td6.textContent = newTaskForm.elements.date.value
-
 
 
     newItem.append(td1);

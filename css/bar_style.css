@@ -3,15 +3,30 @@ body {
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;  
     color:aliceblue;
+    margin: 0;
+    padding: 0;
+}
+  header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-header {
-    display: flex ;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height:200px;
-}
+
 
 
 body#Accueil{
@@ -34,11 +49,7 @@ body#Aide{
     background-size: cover;
 }
 
-footer#Accueil{
-    display:flex;
-    background: url(../picturebar/pexels-emre-can-acer-2079438.jpg) no-repeat fixed ;
-    background-size: cover;
-}
+
 section#Choix{
     display: flex;
     justify-content: center;
@@ -49,29 +60,158 @@ section#Choix div{
     height: 200px;
     flex:0 1 px 33%;
 }
-/*
-div#Aide{
-    background: url(../picturebar/pexels-mali-maeder-219095.jpg) no-repeat  ;
-    background-size: cover;
+
+#recette{
+
+    background-color: #333;
 }
 
-div#A_propos{
-    background: url(../picturebar/pexels-mike-yakaites-2585614.jpg) no-repeat  ;
-    background-size: cover;
-}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+  }
+  
+  
+  nav ul {
+    background-color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  nav ul li {
+    float: left;
+  }
+  
+  nav ul li a {
+    color: white;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
 
-div#Tableau{
-    background: url(../picturebar/bar.png) no-repeat  ;
-    background-size: cover;
-}
-*/
-.zoom img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.zoom :hover img {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
-}
+  main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .box {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  table.datatable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table.datatable th,
+  table.datatable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table.datatable th {
+    background-color: #333;
+    color: white;
+  }
+  
+  table.datatable tr:nth-child(even) {
+    background-color: #333;
+  }
+  section {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  form.box {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #333;
+    border-radius: 4px;
+  }
+  
+  form.box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  form.box input[type="text"],
+  form.box input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  form.box select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  form.box button[type="submit"],
+  form.box button[type="button"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form.box button[type="submit"]:hover,
+  form.box button[type="button"]:hover {
+    background-color: #45a049;
+  }
+  
+  section#TravailRéaliser {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    background-color: #333;
+  }
+  
+  section#TravailRéaliser h1 {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+  
+  section#TravailRéaliser h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  section#TravailRéaliser h3 {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  
+  
