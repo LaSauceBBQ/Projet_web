@@ -18,44 +18,59 @@
             <img src="https://www.efrei.fr/wp-content/uploads/2022/01/LOGO_EFREI-PRINT_EFREI-WEB.png" alt="Logo Efrei"  width="20%" height="36%"  />
             <h1>Efrei Bar</h1>
         </header>
+
         <section>
             <form method = "post" name="newTask" class="box" id="newTask" onsubmit="return false">
-                <strong>Nom de la tâche</strong>
-                <input type="text" id="tache" name="tache" size="25" placeholder = "Nouvelle tâche" required>
-                <strong>Date:</strong></label>
-                <input type="date" id="date" name="date" value="2022-09-01"
-                 min="2022-09-01" max="2023-09-01">
-                <strong>Catégorie : </strong>
-                <select name="categorie" size=1>
-                    <option>Tâche personnelle</option>
-                    <option>Tâche professionnelle</option>
-                    <option> Tâche partagée</option>
+
+                <strong>Nom du cocktail</strong>
+                <input type="text" id="NomCocktail" name="NomCocktail" size="20" placeholder = "Nom du cocktail" required>
+
+                <strong>liste des ingrédiens</strong>
+                <input type="text" id="Ingrédiens" name="Ingrédiens" size="40" placeholder = "Ingrédiens" required>
+
+                <strong>Méthode</strong>
+                <input type="text" id="Méthode" name="Méthode" size="50" placeholder = "Méthode" required>
+
+                <strong>Difficulté : </strong>
+                <select name="Difficulté" size=1>
+                    <option>Niveau Débutant</option>
+                    <option>Niveau intermédiaire </option>
+                    <option>Niveau Avancé</option>
+                    <option>Niveau Expert</option>
                 </select>
+
+                <strong>Pseudo</strong>
+                <input type="text" id="Pseudo" name="Pseudo" size="10" placeholder = "Pseudo" required>
+
+                <strong>Date:</strong></label>
+                <input type="date" id="date" name="date" value="2023-01-04" min="2023-01-04" max="2023-12-04">
 
                 <button type="submit" class="btn" onclick="ajouter()">Ajouter</button>
                 <button type="button" class="btn"  onclick="supprimer()">Supprimer</button>
 
 
             </form>
-        </section>
-        <main>
-            <div class="box">
-                    
-                <table class="datatable">
-                    <thead>
-                        <tr>
-                        <th>Ingrédient</th>
-                        <th>Recette </th>
-                        <th>Difficulté</th>
-                        
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-                </div>
-        
-        </main>         
+    </section>
+    <main>
+        <div class="box">
+                
+            <table class="datatable">
+                <thead>
+                    <tr>
+                    <th>Nom du cocktail</th>
+                    <th>Ingrédiens </th>
+                    <th>Réalisation</th>
+                    <th>Difficulté</th>
+                    <th>Pseudo</th>
+                    <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            </div>
+    
+    </main>            
 
 
        <footer id="Accueil">
